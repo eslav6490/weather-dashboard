@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard (v2.2)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        
+        <!-- Last Updated Section -->
+        <p id="last-updated">Last Updated: Loading...</p>
+
+        <!-- Dark Mode Toggle Switch -->
+        <div class="dark-mode-toggle">
+            <label for="dark-mode-toggle" class="toggle-label">Dark Mode</label>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <!-- Weather Cards Container -->
+        <div id="cards-container" class="cards-container">
+            <!-- Temperature Card -->
+            <div class="card" id="temperature-card">
+                <h2>Temperature</h2>
+                <p>Outdoor: <span id="tempf">Loading...</span> <span id="tempf-trend"></span></p>
+                <p>Indoor: <span id="tempinf">Loading...</span> <span id="tempinf-trend"></span></p>
+            </div>
+            
+            <!-- Humidity Card -->
+            <div class="card" id="humidity-card">
+                <h2>Humidity</h2>
+                <p>Outdoor: <span id="humidity">Loading...</span> <span id="humidity-trend"></span></p>
+                <p>Indoor: <span id="humidityin">Loading...</span> <span id="humidityin-trend"></span></p>
+            </div>
+            
+            <!-- Wind Speed Card -->
+            <div class="card" id="windspeed-card">
+                <h2>Wind Speed</h2>
+                <p id="windspeed">Loading...</p> <span id="windspeed-trend"></span>
+            </div>
+            
+            <!-- Pressure Card -->
+            <div class="card" id="pressure-card">
+                <h2>Pressure</h2>
+                <p id="pressure">Loading...</p> <span id="pressure-trend"></span>
+            </div>
+            
+            <!-- Outdoor Air Quality Card -->
+            <div class="card" id="outdoor-air-card">
+                <h2>Outdoor Air Quality</h2>
+                <p>PM2.5: <span id="pm25">Loading...</span> <span id="pm25-trend"></span></p>
+                <p>PM2.5 (24h avg): <span id="pm25_24h">Loading...</span> <span id="pm25_24h-trend"></span></p>
+            </div>
+            
+            <!-- Rain Data Card (no trend arrows for rain data) -->
+            <div class="card" id="rain-card">
+                <h2>Rain Data</h2>
+                <p>Hourly Rain: <span id="hourlyrainin">Loading...</span></p>
+                <p>Daily Rain: <span id="dailyrainin">Loading...</span></p>
+                <p>Weekly Rain: <span id="weeklyrainin">Loading...</span></p>
+                <p>Monthly Rain: <span id="monthlyrainin">Loading...</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
